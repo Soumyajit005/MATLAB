@@ -1,0 +1,11 @@
+clc;
+close all;
+n = -10:1:10;
+X = 1*(n>=0)+0*(n<0);
+figure(1);
+stem (n,X);
+title ('Unit_Step');
+xlabel ('n');
+ylabel ('X');
+grid on;
+axis square;

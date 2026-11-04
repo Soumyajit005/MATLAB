@@ -1,0 +1,15 @@
+clc;
+close all;
+clear all;
+n =-10:10;
+a1 = 0.7;
+a2 = 1.3;
+X1 = (a1.^n).*(n>=0)+0*(n<0);
+X2 = (a2.^n).*(n>=0)+0*(n<0);
+figure(1);
+subplot (2,1,1);
+stem (n, X1, 'r');
+title ('Exponential Decay');
+subplot (2,1,2);
+stem (n, X2, 'b');
+title ('Exponential Rise');

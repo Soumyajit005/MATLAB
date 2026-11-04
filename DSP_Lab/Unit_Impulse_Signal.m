@@ -1,0 +1,12 @@
+clc;
+clear all;
+close all;
+n = -5:1:5;
+X = 1*(n==0)+0*(n~=0);
+figure(1);
+stem(n,X);
+title ('Unit_Impulse');
+xlabel ('n');
+ylabel ('X');
+grid on;
+axis square;
